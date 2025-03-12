@@ -13,6 +13,7 @@
 			.blue-shadow-text {
 				color: #02695c; /* Более синий цвет */
 				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+				font-weight: bold;
 			}
 	
 			.bold-text {
@@ -24,11 +25,13 @@
 			}
 	
 			.subheading {
-				color: #007acc; /* Синий цвет для подзаголовка */
+				color: #196402; /* Цвет для подзаголовка */
 				font-size: 20px;
-				font-weight: bold;
+				font-weight: strong;
 				margin-top: 10px;
 				margin-bottom: 5px;
+				margin-left: 20px;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 			}
 		</style>
 	</head>
@@ -61,12 +64,12 @@
 								<h1 id="one" class="shadow-text">Резюме</h1>
 							</header>
 		
-							<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;" class="shadow-text">
+							<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; width: 60%;" class="shadow-text">
+								<!-- <div>
+									<span><a href="#skills1"><h1 style="color: teal;" >Навыки</h1></a></span><br>
+								</div> -->
 								<div>
-									<span><a href="#skills1"><h1 style="color: teal;">Навыки</h1></a></span><br>
-								</div>
-								<div>
-									<span><a href="#recent-projects1"><h1 style="color: teal;">Прошлые проекты</h1></a></span><br>
+									<span><a href="#recent-projects1"><h1 style="color: teal;">Проекты</h1></a></span><br>
 								</div>
 								<div>
 									<span><a href="#interests1"><h1 style="color: teal;">Интересы</h1></a></span><br>
@@ -79,14 +82,14 @@
 						
 						<h2 id="section1" class="shadow-text">Навыки</h2>
     <ul style="line-height: 1.1em; font-size: 14px;">
-        <span style="margin-left: 25px;"> <strong >Работа с различными ОС:</strong></span>
+        <span class="subheading">Работа с различными ОС:</span>
             <ul>
                 <li><strong>Windows:</strong> cmd, powershell, администрирование системы. Настройка брандмауэра, path, реестра и пр.</li>
 				<li><strong>Linux:</strong> ubuntu, mint. Настройка системы под себя, установка утилит (cat, tail, nano и пр.), использование команд (cd, rm, ls, touch и пр.) </li>
 				<li><strong>Android:</strong> Управление системой на уровне опытного пользователя. Опыт тестирования и отладки мобильных приложений (ADB, Android Studio)</li>
             </ul>
         
-        <span style="margin-left: 25px;"> </span><strong>Теория тестирования:</strong>
+        <span class="subheading">Теория тестирования:</span>
             <ul>
                 <li>Знание и понимание видов и принципов тестирования ПО</li>
                 <li>Понимание классификации тестирования ПО, умение применять различные техники тест-дизайна и методологий тестирования ПО</li>
@@ -94,7 +97,7 @@
 				<li>Понимание концепции и подходов к автоматизации тестирования</li>
             </ul>
 
-        <span style="margin-left: 25px;"> </span><strong>Практика тестирования:</strong>
+        <span class="subheading">Практика тестирования:</span>
             <ul>
                 <li>Проведение различных видов тестирования ПО (функциональное, юзабилити, регрессионное, нагрузочное, кросс-браузерное и другие)</li>
                 <li>Участие в тестировании на различных этапах разработки (модульное, интеграционное, системное, приемочное)</li>
@@ -109,7 +112,7 @@
                 <li>Опыт тестирования локализации</li>
             </ul>
 
-			<span style="margin-left: 25px;"> </span><strong>Инструменты тестирования:</strong>
+			<span class="subheading">Инструменты тестирования:</span>
             <ul>
                 <li>Тестирование API и интеграций: Postman, Swagger, SoapUI, DevTools, Сurl</li>
                 <li>Опыт работы с данными и системами мониторинга: Charles, Fiddler, Zabbix, Kibana, ELK</li>
@@ -125,7 +128,7 @@
 				<li>Базовые знания проведения нагрузочного тестирования с Jmeter</li>
             </ul>
 
-		<span style="margin-left: 25px;"> </span><strong>Работа с документацией:</strong>
+		<span class="subheading">Работа с документацией:</span>
             <ul>
                 <li>Разработка и поддержка полного цикла тестовой документации (тест планы, тест кейсы, чек листы, отчеты о проведении тестирования и др.)</li>
                 <li>Разработка и актуализация технической документации (сценарии использования, фрагменты технических заданий и спецификаций), в том числе при взаимодействии с заказчиком</li>
@@ -136,13 +139,13 @@
                 <li>Работа с артефактами приемочного тестирования (ПСИ и ПМИ)</li>
             </ul>
 
-		<span style="margin-left: 25px;"> </span><strong>Системы управления тестированием и документацией:</strong>
+		<span class="subheading">Системы управления тестированием и документацией:</span>
             <ul>
                 <li>Ведение проекта, организация работы, тестовая документация и баг-трекинг:
 					Redmine, GitLab, GitHub, Jira, TestIT, TestRail, Confluence, доски Miro, Figma, Bitrix24, Microsoft Teams и др.</li>
             </ul>        
         
-        <span style="margin-left: 25px;"> </span><strong>Опыт программирования и верстки:</strong>
+        <span class="subheading">Опыт программирования и верстки:</span>
             <ul>
                 <li>Хорошие знания Python: (синтаксис, алгоритмика, автоматизация, приложения, боты). 
 				Примеры: <a href="">Архив заданий python</a> | <a href="">test</a> | <a href="https://github.com/vladimir-kap/daily-byte">daily-byte daily tasks</a> | <a href="">test</a>
@@ -154,7 +157,7 @@
                 <li>Базовые знания PHP (синтаксис)</li>
             </ul>
 
-		<span style="margin-left: 25px;"> </span><strong>Автоматизация тестирования:</strong>
+		<span class="subheading">Автоматизация тестирования:</span>
             <ul>
                 <li>Запуск автотестов. Анализ тест-репорта.</li>
                 <li>Написание UI автотестов на Playwright + java(+junit) + js + python <a href="">Примеры</a></li>
@@ -162,7 +165,7 @@
                 <li>Автоматизация тестирования средствами Postman (коллекции)</li>
             </ul>
         
-        <span style="margin-left: 25px;"> </span><strong>Сетевые технологии, протоколы и способы интеграции:</strong>
+        <span class="subheading">Сетевые технологии, протоколы и способы интеграции:</span>
             <ul>
                 <li>Понимание устройства сетевых протоколов и способов взаимодействия различных систем</li>
                 <li>Знания сетевого взаимодействия, сетевого оборудования, маршрутизации и модели OSI</li>
@@ -173,40 +176,40 @@
                 <li>Понимание форматов передачи данных (XML, JSON, YAML)</li>
             </ul>
         
-        <span style="margin-left: 25px;"> </span><strong>Администрирование в ИТ:</strong>
+        <span class="subheading">Администрирование в ИТ:</span>
             <ul>
                 <li>Знания внутреннего устройства и архитектуры ПК</li>
                 <li>Практический опыт диагностики и ремонта компьютерной (и не только) техники</li>
             </ul>
         
-        <span style="margin-left: 25px;"> </span><strong>Знания и опыт работы с базами данных и SQL:</strong>
+        <span class="subheading">Знания и опыт работы с базами данных и SQL:</span>
             <ul>
                 <li>Опыт работы с SQL базами данных (MySQL, OracleDB, PostgreSQL, MS SQL) написание SQL запросов средней сложности (CRUD, выборка, группировка, сортировка, объединения)</li>
                 <li>Опыт работы с NoSQL базами данных (MongoDB) написание запросов Regexp в MongoDB с целью аггрегации и поиска данных</li>
                 <li>Опыт работы с не реляционными базами данных (Elastic Search)</li>
             </ul>
         
-        <span style="margin-left: 25px;"> </span><strong>Виртуализация:</strong>
+        <span class="subheading">Виртуализация:</span>
             <ul>
                 <li>Работа с системами виртуализации и контейнеризации (VirtualBox, Hyper-v, Docker, Kubernetes)</li>
                 <li>Опыт развертывания и администрирования приложений в контейнерах при помощи Docker</li>
                 <li>Работа с облачными сервисами, подключение к ВМ, выполнение команд через SSH или VNC</li>
             </ul>
         
-        <span style="margin-left: 25px;"> </span><strong>Системы контроля версий и CI\CD:</strong>
+        <span class="subheading">Системы контроля версий и CI\CD:</span>
             <ul>
                 <li>Работа с Git (cmd/powershell, terminal, git-bash, desktop)</li>
 				<li>Знания о запуске пайплайна деплоя тестового окружения в jenkins</li>
             </ul>
         
-        <span style="margin-left: 25px;"> </span><strong>Управление командой:</strong>
+        <span class="subheading">Управление командой:</span>
             <ul>
                 <li>Опыт наставничества</li>
                 <li>Опыт проведения онбординга для QA специалистов</li>
                 <li>Планирование и контроль работы младших тестировщиков</li>
             </ul>
         
-        <span style="margin-left: 25px;"> </span><strong>Личностные качества:</strong>
+        <span class="subheading">Личностные качества:</span>
             <ul>
                 <li>Высокий уровень самоорганизации и самостоятельности</li>
                 <li>Ответственность, усидчивость, внимательность к мелочам</li>
@@ -432,7 +435,7 @@
 						<h2 id="contacts1" class="shadow-text">Контакты</h4>
 					</header>
 
-					<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+					<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; width: 60%;">
 						<div>
 							<span style="font-size: 14px; line-height: 1.1em;"><strong>GitHub:</strong></span><br>
 							<span style="font-size: 14px; line-height: 1.1em;"><a href="https://github.com/vladimir-kap">vladimir-kap</a></span>
