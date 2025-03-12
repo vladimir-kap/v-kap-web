@@ -5,6 +5,32 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.shadow-text {
+				color: teal;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+			}
+			.blue-shadow-text {
+				color: #02695c; /* Более синий цвет */
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+			}
+	
+			.bold-text {
+				font-weight: bold;
+			}
+	
+			.large-text {
+				font-size: 24px;
+			}
+	
+			.subheading {
+				color: #007acc; /* Синий цвет для подзаголовка */
+				font-size: 20px;
+				font-weight: bold;
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -15,21 +41,43 @@
 					<h1><strong>Владимир Капустин</strong> Middle QA</h1>
 					<div><strong id="experienceResult"></strong></div>
 					<p>
-						Мне 30 лет. Работаю в сфере IT с 2019г. специализируюсь на тестировании ПО.<br />
+						Мне 30 лет. Специализируюсь на тестировании ПО. Интересуюсь автоматизацией процессов<br />
 					</p>
 				</div>
 			</header>
 
 		<!-- Main -->
-			<div id="main">
+			<div id="main" style="padding-top: 12px;">
 
 				<!-- One -->
-					<section id="one">
+					<!-- <section id="one">
 						<header class="major">
 							<h2>Резюме содержит перечень <a href="#skills1" style="color: teal;">навыков</a>,<br /> краткое описание <a href="#recent-projects1" style="color: teal;">прошлых проектов</a>,<br />
 							мои <a href="#interests1" style="color: teal;">интересы</a> в сфере IT и мои <a href="#contacts1"  style="color: teal;">контакты</a></h2>
-						</header>
-						<h2 id="section1">Навыки</h2>
+						</header> -->
+
+						<section>
+							<header>
+								<h1 id="one" class="shadow-text">Резюме</h1>
+							</header>
+		
+							<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;" class="shadow-text">
+								<div>
+									<span><a href="#skills1"><h1 style="color: teal;">Навыки</h1></a></span><br>
+								</div>
+								<div>
+									<span><a href="#recent-projects1"><h1 style="color: teal;">Прошлые проекты</h1></a></span><br>
+								</div>
+								<div>
+									<span><a href="#interests1"><h1 style="color: teal;">Интересы</h1></a></span><br>
+								</div>
+								<div>
+									<span><a href="#contacts1"><h1 style="color: teal;">Контакты</h1></a></span><br>
+								</div>
+							</div>
+						</section>
+						
+						<h2 id="section1" class="shadow-text">Навыки</h2>
     <ul style="line-height: 1.1em; font-size: 14px;">
         <span style="margin-left: 25px;"> <strong >Работа с различными ОС:</strong></span>
             <ul>
@@ -171,11 +219,11 @@
 <!-- Four -->
 				
 					<section id="four">
-						<h2 id="recent-projects1" style="color: teal;">Прошлые проекты</h2>
+						<h2 id="recent-projects1" class="shadow-text">Прошлые проекты</h2>
 
 						<section>
 							<header>
-								<h4>Проект облачных технологий</h4>
+								<h4 class="blue-shadow-text">Проект облачных технологий</h4>
 								<p>Длительность проекта: Октябрь 2023 – Февраль 2025 (1 год 4 месяца)</p>
 							</header>
 
@@ -204,7 +252,7 @@
 							</p>
 							<hr />
 							<header>
-								<h4>Веб-конструктор страховых продуктов</h4>
+								<h4 class="blue-shadow-text">Веб-конструктор страховых продуктов</h4>
 								<p>Длительность проекта: Июль 2021 – Октябрь 2023 (2 года 3 месяца)</p>
 							</header>
 
@@ -233,7 +281,7 @@
 							</p>
 							<hr />
 							<header>
-								<h4>Сервис по жилищно-коммунальному хозяйству (ЖКХ)</h4>
+								<h4 class="blue-shadow-text">Сервис по жилищно-коммунальному хозяйству (ЖКХ)</h4>
 								<p>Длительность проекта: Апрель 2021 – Июль 2021 (4 месяца) </p>
 							</header>
 
@@ -261,7 +309,7 @@
 							
 							<hr />
 							<header>
-								<h4>Веб-портал туристических бронирований</h4>
+								<h4 class="blue-shadow-text">Веб-портал туристических бронирований</h4>
 								<p>Длительность проекта: Декабрь 2018 – Март 2021 (2 года 3 месяца)</p>
 							</header>
 
@@ -331,8 +379,8 @@
 
 
 					<section>
-						<h2 id="interests1" style="color: teal;">Интересы</h2>
-						<h5>Left &amp; Right</h5>
+						<h2 id="interests1" class="shadow-text">Интересы</h2>
+						<!-- <h5></h5> -->
 						<p><span class="image left"><img src="images\playwright-seeklogo.png" alt="" style=" width: 100px;    height: 100px;    object-fit: contain;"/></span>
 							Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum.
 							Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget.
@@ -353,7 +401,7 @@
 
 					<hr />
 					<section id="four">
-						<h2 id="recent-projects1">Образование</h2>
+						<h2 id="recent-projects1" class="shadow-text">Образование</h2>
 
 					<section>
 						<header>
@@ -381,7 +429,7 @@
 
 				<section>
 					<header>
-						<h2 id="contacts1" style="color: teal;">Контакты</h4>
+						<h2 id="contacts1" class="shadow-text">Контакты</h4>
 					</header>
 
 					<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
